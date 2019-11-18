@@ -1,0 +1,646 @@
+// Khai báo font
+@font-face{
+	font-family: SanBold;
+	src:url('../fonts/OpenSans-Bold.ttf') format("ttf");
+}
+@font-face{
+	font-family: Sans;
+	src:url('../fonts/OpenSans-Regular.ttf') format("ttf");
+}
+
+@font-face{
+	font-family: SF;
+	src:url('../fonts/sf.woff') format("woff"),url('../fonts/sf.woff2') format("woff2"),url('../fonts/SF.otf');
+}
+
+
+$break-small: 320px;
+$break-mobile: 400px;
+$break-tablet: 768px;
+$break-medium: 980px;
+$break-large: 1200px;
+$break-big: 1366px;
+$max-tablet : 767.98px;
+$font-title : SanBold;
+$color-white : #fff;
+$bg-footer : #4183d1;
+$color-link : #4a90e2;
+$color-title :#f39316;
+$color-content: #006644;
+body{
+	font-family: Sans, Helvetica, tahoma, sans-serif;
+}
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+.title-head{
+	font: 32px $font-title;
+}
+.text-title{
+	color:$color-title;
+}
+.text-link{
+	color: $color-link;
+}
+.btn-custom{
+	background:#4a90e2;
+	color: #fff;	
+}
+.btn-common{
+	font-size: 20px;
+}
+.btn-border{
+	border:1px solid #4a90e2;
+}
+.btn-size{
+	padding: 12px 40px;
+	text-transform: uppercase;
+	border-radius: 29px;
+}
+
+p.title-content {
+	font-size: 20px;
+	color: $color-white;
+	line-height: 1.5;
+}
+p.content {
+	font-size: 16px;
+}
+h3.title {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: $color-title;
+}
+.bg-fix{
+    padding: 180px 0px 124px 0px;
+    color: #fff;
+    .banner-title{
+		font:62px $font-title;
+	}
+	p{
+		font-size: 18px;
+	}
+}
+.bg-content{
+	background: url('../img/anh_nen_thu_2.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}
+.bg-content-mid{
+	background: url('../img/anh_nen_thu_2.png') no-repeat center top;
+	background-size:100% 60%;
+}
+.bg-gray{
+	background:#f9fafb;
+}
+.bg-blue{
+	background:#0f6fdf;
+}
+.bg-logo-chim{
+	background: url('../img/bg/logo_chim.png') no-repeat;
+	background-size:30%;
+    background-position:center 50px;
+}
+.banner{
+	color: #fff;
+	.banner-title{
+		line-height: 1.2 !important;
+		@media screen and (min-width: $break-small){
+			font:36px $font-title;
+		}
+		@media screen and (min-width: $break-mobile){
+			font:48px $font-title;
+		}
+		@media screen and (min-width: $break-tablet){
+			font:52px $font-title;
+		}
+	}
+	p{
+		font-size: 18px;
+	}
+	@media screen and (min-width: $break-small){
+		padding: 165px 0px 124px 0px;
+	}
+	@media screen and (min-width: $break-large){
+		padding: 200px 0px 124px 0px;
+	}
+	
+}
+.article{
+	background:#f9fafb;
+	padding: 70px 0px 55px 0px;
+	.card{
+		height: 100%;
+	}
+	.card-title{
+		font-size: 24px;
+		overflow: hidden;
+		a{
+			color:$color-title;
+		}
+		@media screen and (min-width: $break-small){
+			height: auto;
+		}
+		@media screen and (min-width: $break-tablet){
+			height: 60px;
+		}
+	}
+	.card-text{
+		font-size: 14px;
+		overflow: hidden;
+		@media screen and (min-width: $break-small){
+			height: auto;
+		}
+		@media screen and (min-width: $break-tablet){
+			height: 90px;
+		}
+	}
+	@media screen and (min-width: $break-small){
+		div[class*='col-']{
+			margin-bottom: 15px;
+		}
+	}
+}
+.slogan{
+	padding: 102px 0px 85px 0px;
+	.icon{
+		img{
+			padding: 0px 0px 51px 0px ;
+			@media screen and (min-width: $break-small){
+				width: 120px;
+			}
+			@media screen and (min-width: $break-mobile){
+				width: 130px;
+			}
+		}
+	}
+	h4{
+		padding: 0px 0px 20px 0px;
+		font-weight: lighter !important;
+		@media screen and (min-width: $break-mobile){
+			font-size: 1.2rem;
+			line-height: 1.5rem !important;
+		}
+		@media screen and (min-width: $break-tablet){
+			font-size: 1.8rem;
+			line-height: 2.8rem !important;
+		}
+		
+	}
+	.btn-talk{
+		background:#4a90e2;
+		border:1px solid #fff;
+		color: #fff;
+		font-size: 14px;
+		padding: 14px 35px;
+		transition: all .2s;
+		i{
+			padding: 0px 2px;
+		}
+		&:hover{
+			background:#fff;
+			border:1px solid #4a90e2;
+			color:#4a90e2;
+		}
+	}
+}
+.awards{
+	.owl-carousel{
+		.owl-item{
+			img{
+				width: auto;
+				margin:30px auto;
+				@media screen and (min-width: $break-small){
+					outline-offset: 0px;
+					outline: 1px dashed transparent;
+				}
+				@media screen and (min-width: $break-mobile){
+					outline-offset: 12px;
+					outline: 1px dashed #e8e8e8;
+				}
+			}
+		}
+		.owl-nav{
+			display: none;
+		}
+		.owl-dots{
+			span {
+			    width: 8px;
+			    height: 8px;
+			    margin: 5px 7px;
+			    background: #D6D6D6;
+			    display: block;
+			    -webkit-backface-visibility: visible;
+			    transition: opacity .2s ease;
+			    border-radius: 0px;
+			}
+			.active span{
+				width: 12px;
+			    height: 12px;
+			    background:#e8e8e8;
+			}
+			@media screen and (min-width: $break-small){
+				margin-top: 30px !important;
+			}
+			@media screen and (min-width: $break-tablet){
+				margin-top: 60px !important;
+			}
+			
+		}
+	}
+}
+.list-client{
+	.list-team{
+		margin-top: 30px;
+		.list-item{
+			margin-bottom: 30px;
+		}
+	}
+	.text-link{
+		margin: 89px 0px 81px 0px;
+		transition: all .5s;
+		padding: 12px 20px;
+		&:hover{
+			background:$color-link;
+			color: #fff;
+		}
+		@media screen and (min-width: $break-small){
+			margin: 50px 0px 10px 0px;
+			padding: 12px 5px;
+		}
+		@media screen and (min-width: $break-mobile){
+			margin: 50px 0px 10px 0px;
+			padding: 12px 20px;
+		}
+		
+	}
+}
+.relates{
+	.relate-title{
+		font-family: $font-title;
+		font-size: 20px;
+		a{
+			color: $color-title;
+		}
+	}
+	.relate-param{
+		font-size: 14px;
+		padding-top: 15px;
+		color: #9b9b9b;
+	}
+	.relate-more{
+		font-size: 14px;
+		color:$color-link;
+	}
+	.relate-item{
+		width: 100%;
+		border: 1px solid #efefef;
+		margin-bottom: 15px;
+		.relate-img{
+			width: 100%;
+			height: 230px;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit:cover;
+			}
+		}
+		.relate-content{	
+			padding: 29px 27px 30px 27px;
+			@media screen and (min-width: $break-small){
+				padding: 29px 10px 30px 10px;
+			}
+			@media screen and (min-width: $break-tablet){
+				padding: 20px 10px 5px 10px;
+			}
+			@media screen and (min-width: $break-medium){
+				padding: 30px 15px 15px 15px;
+			}
+			@media screen and (min-width: $break-large){
+				padding: 30px 15px 20px 15px;
+			}
+			
+			p{
+				margin-bottom: 0rem;
+				@media screen and (min-width: $break-medium){
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+	.relate-list{
+		border: 1px solid #efefef;
+		margin-bottom: 32px;
+		overflow: hidden;
+		height: 225px;
+		&_img{
+			float: left;
+			width: 36%;
+			height: 225px;
+			overflow: hidden;
+			img{
+				width: 100%;
+  				height: 100%;
+  				object-fit:cover; 
+			}
+			@media screen and (min-width: $break-small){
+				float: none;
+				width: 100%;
+			}
+			@media screen and (min-width: $break-tablet){
+				float: left;
+				height: 235px;
+				width: 36%;
+			}
+			
+		}
+		&_content{
+			// float: left;
+			// width: 64%;
+			
+			@media screen and (min-width: $break-small){
+				float: none;
+				width: 100%;
+				padding: 20px 10px;
+			}
+			@media screen and (min-width: $break-tablet){
+				float: left;
+				width: 64%;
+				padding:10px;
+				height: 230px;
+			}
+			@media screen and (min-width: $break-large){
+				padding: 20px;
+			}
+			
+			.relate-title{
+				@media screen and (min-width: $break-tablet){
+					font-size: 16px;
+				}
+				@media screen and (min-width: $break-large){
+					font-size: 20px;
+				}
+				
+			}
+			.relate-param{
+				font-size: 14px;
+				padding-top: 15px;
+				color: #9b9b9b;
+				@media screen and (min-width: $break-tablet){
+					padding-top: 0px;
+				}
+				@media screen and (min-width: $break-medium){
+					padding-top: 15px;
+				}
+
+			}
+			p{
+				margin-bottom: 0rem;
+				@media screen and (min-width: $break-large){
+					margin-bottom: 1rem;
+				}
+			}
+			
+		}
+		@media screen and (min-width: $break-small){
+			height: auto;
+			margin-bottom: 15px;
+		}
+		@media screen and (min-width: $break-tablet){
+			height: 235px;
+			margin-bottom: 32px;
+		}
+		@media screen and (min-width: $break-medium){
+			height: 225px;
+			margin-bottom: 23px;
+		}
+		
+		
+	}
+}
+.upper-first-text{
+	&:first-letter{
+		text-transform: uppercase;
+		float: left;
+		padding: 4px 8px 0 0;
+		display: block;
+		color: $color-title;
+		font: 96px/64px sans-serif;
+	}
+}
+.project-item{
+	background:#fff;
+	box-shadow:0px 0px 5px 1px #e1e1e1;
+	width: 100%;
+	margin-bottom: 50px;
+	@media screen and (min-width: $break-small){
+		height: auto;
+	}
+	@media screen and (min-width: $break-tablet){
+		height: 300px;
+	}
+	@media screen and (min-width: $break-large){
+		height: 360px;
+	}
+	.project-img{
+		overflow: hidden;
+		float: left;
+		@media screen and (min-width: $break-small){
+			float: none;
+			width: 100%;
+		}
+		@media screen and (min-width: $break-tablet){
+			float: left;
+			width: 35%;
+			height: 300px;
+		}
+		@media screen and (min-width: $break-large){
+			height: 360px;
+			width: 45%;
+		}
+		
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.project-content{
+		padding: 22px;
+		float: left;
+		@media screen and (min-width: $break-small){
+			float: none;
+			width: 100%;
+		}
+		@media screen and (min-width: $break-tablet){
+			width: 65%;
+			float: left;
+			height: 300px;
+		}
+		@media screen and (min-width: $break-large){
+			height: 360px;
+			width: 55%;
+		}
+		
+		h3{
+			font-size: 24px;
+			font-family: $font-title;
+			a{
+				color:$color-title;
+			}
+			@media screen and (min-width: $break-small){
+				margin-bottom: 20px;
+			}
+			@media screen and (min-width: $break-large){
+				margin-bottom: 40px;
+			}
+		}
+		p{
+			font-size: 14px;
+			color: #9b9b9b;
+			height: 160px;
+			@media screen and (min-width: $break-small){
+				height: auto;
+			}
+		}
+		.btn-link{
+			font-size: 14px;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+.project{
+	.btn-custom{
+		padding: 14px 40px;
+		&:hover{
+			background:#fff;
+			border:1px solid $color-link;
+			color: $color-link;
+		}
+	}
+}
+.overview{
+	font-size: 18px;
+	padding: 10px 60px;
+	margin: 10px 0px 20px 0px;
+	line-height: 1.6;
+}
+.tag{
+	a{
+		background:$color-link;
+		color:#fff;
+		font-size: 12px;
+		padding: 5px 14px;
+		border-radius:5px;
+		display: inline-block;
+		margin-bottom: 5px;
+		&:hover{
+			background:#2665af;
+		}
+	}
+	@media screen and (min-width: $break-small){
+		height: auto;
+		margin-bottom: 10px;
+	}
+	@media screen and (min-width: $break-medium){
+		height: 80px;
+		margin-bottom: 0px;
+	}
+	
+}
+
+//style me
+$color-title: #4A4A4A;
+.title-color {
+	color: #4A4A4A;
+}
+.p-top {
+  margin-top: 70px;
+}
+.h3-title {
+	font-weight: 600;
+		@media screen and (min-width: $break-small){
+			font-size: 23px;
+		}
+		@media screen and (min-width: $break-tablet){
+			font-size: 30px;
+		}
+		@media screen and (min-width: $break-large){
+			font-size: 45px;
+		}
+}
+.p-content {
+	color: $color-title;
+	@media screen and (min-width: $break-small){
+		font-size: 13px;
+	}
+	@media screen and (min-width: $break-large){
+		font-size: 16px;
+	}
+}
+.btn-more-all {
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	background: #4A90E2;
+	padding: 10px 25px;
+	border-radius: 25px;
+	margin-top: 40px;
+}
+p.content-top {
+		font-family: $font-title;
+		line-height: 1.5;
+		color:#4A4A4A;
+		margin-bottom: 0;
+		@media screen and (min-width: $break-small){
+			font-size: 18px;
+		}
+		@media screen and (min-width: $break-tablet){
+			font-size: 20px;
+		}
+
+		@media screen and (min-width: $break-large){
+			font-size: 24px;
+		}
+}
+.item-help {
+	margin-bottom: 40px;
+	object-fit: cover;
+	img {
+		@media (min-width: $break-tablet) {
+			width: 10%;
+		}
+		@media (max-width: $max-tablet) {
+			width: 18%;
+		}
+	}
+}
+h5.title-small {
+	font-family: $font-title;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 1.4;
+	color: #4A4A4A;
+	@media (max-width: $break-medium) {
+
+		font-size: 18px;
+	}
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+	margin-top: -50px;
+	z-index: 1;
+	position: relative;
+}
+.owl-theme .owl-dots .owl-dot span {
+	width: 18px;
+	height: 18px;
+}

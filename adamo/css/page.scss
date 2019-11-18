@@ -1,0 +1,135 @@
+@import "common";
+@mixin text-menu {
+  span{
+		position: relative;
+		padding-bottom: 5px;
+	}
+	span:after{
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		left: 0%;
+		right: 0%;
+		margin: 0 auto;
+		background:#4a90e2;
+		height: 3px;
+		width: 0%;
+		transition: all .2s;
+	}
+	span:hover:after{ width: 100%;}
+	.active span:after{ width: 100% !important;}
+}
+body {
+	counter-reset: sec-counter;
+}
+header {
+	background-color: $color-white;
+	.top-menu {
+		display: flex;
+		justify-content: space-between;
+		.logo {
+			object-fit: cover;
+			margin: 16px;
+			img {
+				width: 80%;
+			}
+		}
+		.nav {
+			margin-top: 40px;
+			ul {
+				li {
+					float: left;
+					padding: 0 12px;
+					font-size: 14px;
+					text-transform: uppercase;
+					a {
+						color: $color-content;
+						font-weight: 600;
+					}
+					i#search {
+						padding: 15px;
+						background-color: #006644;
+						border-radius: 50%;
+						font-size: 18px;
+						margin-top: -13px;
+						color: $color-white;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+	}
+}
+.slider {
+	.img {
+		padding-top: 143px;
+		.title {
+			h3 {
+				font-size: 51px;
+				color: $color-white;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			button.more {
+				text-transform: uppercase;
+				color: $color-white;
+				background-color: #f39316;
+				border-radius: 29px;
+				border: none;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+.introduce {
+	margin-top: 100px;
+	h3 {
+		padding-bottom: 44px;
+	}
+	.icon {
+		object-fit: cover;
+		min-height: 135px;
+	}
+	button {
+		color: $color-white;
+		background-color: $color-content;
+		border:none;
+		margin-top: 55px;
+	}
+	.tower-left {
+		object-fit: cover;
+		img {
+			width:100%;
+		}
+	}
+	.tower-right {
+		object-fit: cover;
+		position: relative;
+		img {
+			width: 100%;
+			position: absolute;
+			right: 0;
+		}
+	}
+}
+.advantages {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	h3 {
+		padding: 50px;
+	}
+	p {
+		color: $color-white;
+		padding-top: 20px;
+	}
+}
+.course {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	h3 {
+		padding: 50px;
+	}
+}
+
+
