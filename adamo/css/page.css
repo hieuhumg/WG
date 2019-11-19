@@ -1,617 +1,86 @@
-@font-face {
-  font-family: SanBold;
-  src: url("../fonts/OpenSans-Bold.ttf") format("ttf"); }
-@font-face {
-  font-family: Sans;
-  src: url("../fonts/OpenSans-Regular.ttf") format("ttf"); }
-@font-face {
-  font-family: SF;
-  src: url("../fonts/sf.woff") format("woff"), url("../fonts/sf.woff2") format("woff2"), url("../fonts/SF.otf"); }
-body {
-  font-family: Sans, Helvetica, tahoma, sans-serif; }
+/*
+Error: Invalid CSS after "...nd (max-width: ": expected expression (e.g. 1px, bold), was ")"
+        on line 71 of common.scss
+        from line 1 of page.scss
 
-a:hover {
-  text-decoration: none; }
+66: }
+67: p.title-content {
+68: 	font-size: 20px;
+69: 	color: $color-white;
+70: 	line-height: 1.5;
+71: 	@media screen and (max-width: )
+72: }
+73: p.content {
+74: 	font-size: 16px;
+75: }
+76: h3.title {
 
-.title-head {
-  font: 32px SanBold; }
-
-.text-title {
-  color: #f39316; }
-
-.text-link {
-  color: #4a90e2; }
-
-.btn-custom {
-  background: #4a90e2;
-  color: #fff; }
-
-.btn-common {
-  font-size: 20px; }
-
-.btn-border {
-  border: 1px solid #4a90e2; }
-
-.btn-size {
-  padding: 12px 40px;
-  text-transform: uppercase;
-  border-radius: 29px; }
-
-p.title-content {
-  font-size: 20px;
-  color: #fff;
-  line-height: 1.5; }
-
-p.content {
-  font-size: 16px; }
-
-h3.title {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #f39316; }
-
-.bg-fix {
-  padding: 180px 0px 124px 0px;
-  color: #fff; }
-  .bg-fix .banner-title {
-    font: 62px SanBold; }
-  .bg-fix p {
-    font-size: 18px; }
-
-.bg-content {
-  background: url("../img/anh_nen_thu_2.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  height: 100%; }
-
-.bg-content-mid {
-  background: url("../img/anh_nen_thu_2.png") no-repeat center top;
-  background-size: 100% 60%; }
-
-.bg-gray {
-  background: #f9fafb; }
-
-.bg-blue {
-  background: #0f6fdf; }
-
-.bg-logo-chim {
-  background: url("../img/bg/logo_chim.png") no-repeat;
-  background-size: 30%;
-  background-position: center 50px; }
-
-.banner {
-  color: #fff; }
-  .banner .banner-title {
-    line-height: 1.2 !important; }
-    @media screen and (min-width: 320px) {
-      .banner .banner-title {
-        font: 36px SanBold; } }
-    @media screen and (min-width: 400px) {
-      .banner .banner-title {
-        font: 48px SanBold; } }
-    @media screen and (min-width: 768px) {
-      .banner .banner-title {
-        font: 52px SanBold; } }
-  .banner p {
-    font-size: 18px; }
-  @media screen and (min-width: 320px) {
-    .banner {
-      padding: 165px 0px 124px 0px; } }
-  @media screen and (min-width: 1200px) {
-    .banner {
-      padding: 200px 0px 124px 0px; } }
-
-.article {
-  background: #f9fafb;
-  padding: 70px 0px 55px 0px; }
-  .article .card {
-    height: 100%; }
-  .article .card-title {
-    font-size: 24px;
-    overflow: hidden; }
-    .article .card-title a {
-      color: #f39316; }
-    @media screen and (min-width: 320px) {
-      .article .card-title {
-        height: auto; } }
-    @media screen and (min-width: 768px) {
-      .article .card-title {
-        height: 60px; } }
-  .article .card-text {
-    font-size: 14px;
-    overflow: hidden; }
-    @media screen and (min-width: 320px) {
-      .article .card-text {
-        height: auto; } }
-    @media screen and (min-width: 768px) {
-      .article .card-text {
-        height: 90px; } }
-  @media screen and (min-width: 320px) {
-    .article div[class*='col-'] {
-      margin-bottom: 15px; } }
-
-.slogan {
-  padding: 102px 0px 85px 0px; }
-  .slogan .icon img {
-    padding: 0px 0px 51px 0px; }
-    @media screen and (min-width: 320px) {
-      .slogan .icon img {
-        width: 120px; } }
-    @media screen and (min-width: 400px) {
-      .slogan .icon img {
-        width: 130px; } }
-  .slogan h4 {
-    padding: 0px 0px 20px 0px;
-    font-weight: lighter !important; }
-    @media screen and (min-width: 400px) {
-      .slogan h4 {
-        font-size: 1.2rem;
-        line-height: 1.5rem !important; } }
-    @media screen and (min-width: 768px) {
-      .slogan h4 {
-        font-size: 1.8rem;
-        line-height: 2.8rem !important; } }
-  .slogan .btn-talk {
-    background: #4a90e2;
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 14px;
-    padding: 14px 35px;
-    transition: all .2s; }
-    .slogan .btn-talk i {
-      padding: 0px 2px; }
-    .slogan .btn-talk:hover {
-      background: #fff;
-      border: 1px solid #4a90e2;
-      color: #4a90e2; }
-
-.awards .owl-carousel .owl-item img {
-  width: auto;
-  margin: 30px auto; }
-  @media screen and (min-width: 320px) {
-    .awards .owl-carousel .owl-item img {
-      outline-offset: 0px;
-      outline: 1px dashed transparent; } }
-  @media screen and (min-width: 400px) {
-    .awards .owl-carousel .owl-item img {
-      outline-offset: 12px;
-      outline: 1px dashed #e8e8e8; } }
-.awards .owl-carousel .owl-nav {
-  display: none; }
-.awards .owl-carousel .owl-dots span {
-  width: 8px;
-  height: 8px;
-  margin: 5px 7px;
-  background: #D6D6D6;
-  display: block;
-  -webkit-backface-visibility: visible;
-  transition: opacity .2s ease;
-  border-radius: 0px; }
-.awards .owl-carousel .owl-dots .active span {
-  width: 12px;
-  height: 12px;
-  background: #e8e8e8; }
-@media screen and (min-width: 320px) {
-  .awards .owl-carousel .owl-dots {
-    margin-top: 30px !important; } }
-@media screen and (min-width: 768px) {
-  .awards .owl-carousel .owl-dots {
-    margin-top: 60px !important; } }
-
-.list-client .list-team {
-  margin-top: 30px; }
-  .list-client .list-team .list-item {
-    margin-bottom: 30px; }
-.list-client .text-link {
-  margin: 89px 0px 81px 0px;
-  transition: all .5s;
-  padding: 12px 20px; }
-  .list-client .text-link:hover {
-    background: #4a90e2;
-    color: #fff; }
-  @media screen and (min-width: 320px) {
-    .list-client .text-link {
-      margin: 50px 0px 10px 0px;
-      padding: 12px 5px; } }
-  @media screen and (min-width: 400px) {
-    .list-client .text-link {
-      margin: 50px 0px 10px 0px;
-      padding: 12px 20px; } }
-
-.relates .relate-title {
-  font-family: SanBold;
-  font-size: 20px; }
-  .relates .relate-title a {
-    color: #f39316; }
-.relates .relate-param {
-  font-size: 14px;
-  padding-top: 15px;
-  color: #9b9b9b; }
-.relates .relate-more {
-  font-size: 14px;
-  color: #4a90e2; }
-.relates .relate-item {
-  width: 100%;
-  border: 1px solid #efefef;
-  margin-bottom: 15px; }
-  .relates .relate-item .relate-img {
-    width: 100%;
-    height: 230px; }
-    .relates .relate-item .relate-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .relates .relate-item .relate-content {
-    padding: 29px 27px 30px 27px; }
-    @media screen and (min-width: 320px) {
-      .relates .relate-item .relate-content {
-        padding: 29px 10px 30px 10px; } }
-    @media screen and (min-width: 768px) {
-      .relates .relate-item .relate-content {
-        padding: 20px 10px 5px 10px; } }
-    @media screen and (min-width: 980px) {
-      .relates .relate-item .relate-content {
-        padding: 30px 15px 15px 15px; } }
-    @media screen and (min-width: 1200px) {
-      .relates .relate-item .relate-content {
-        padding: 30px 15px 20px 15px; } }
-    .relates .relate-item .relate-content p {
-      margin-bottom: 0rem; }
-      @media screen and (min-width: 980px) {
-        .relates .relate-item .relate-content p {
-          margin-bottom: 1rem; } }
-.relates .relate-list {
-  border: 1px solid #efefef;
-  margin-bottom: 32px;
-  overflow: hidden;
-  height: 225px; }
-  .relates .relate-list_img {
-    float: left;
-    width: 36%;
-    height: 225px;
-    overflow: hidden; }
-    .relates .relate-list_img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-    @media screen and (min-width: 320px) {
-      .relates .relate-list_img {
-        float: none;
-        width: 100%; } }
-    @media screen and (min-width: 768px) {
-      .relates .relate-list_img {
-        float: left;
-        height: 235px;
-        width: 36%; } }
-  @media screen and (min-width: 320px) {
-    .relates .relate-list_content {
-      float: none;
-      width: 100%;
-      padding: 20px 10px; } }
-  @media screen and (min-width: 768px) {
-    .relates .relate-list_content {
-      float: left;
-      width: 64%;
-      padding: 10px;
-      height: 230px; } }
-  @media screen and (min-width: 1200px) {
-    .relates .relate-list_content {
-      padding: 20px; } }
-  @media screen and (min-width: 768px) {
-    .relates .relate-list_content .relate-title {
-      font-size: 16px; } }
-  @media screen and (min-width: 1200px) {
-    .relates .relate-list_content .relate-title {
-      font-size: 20px; } }
-  .relates .relate-list_content .relate-param {
-    font-size: 14px;
-    padding-top: 15px;
-    color: #9b9b9b; }
-    @media screen and (min-width: 768px) {
-      .relates .relate-list_content .relate-param {
-        padding-top: 0px; } }
-    @media screen and (min-width: 980px) {
-      .relates .relate-list_content .relate-param {
-        padding-top: 15px; } }
-  .relates .relate-list_content p {
-    margin-bottom: 0rem; }
-    @media screen and (min-width: 1200px) {
-      .relates .relate-list_content p {
-        margin-bottom: 1rem; } }
-  @media screen and (min-width: 320px) {
-    .relates .relate-list {
-      height: auto;
-      margin-bottom: 15px; } }
-  @media screen and (min-width: 768px) {
-    .relates .relate-list {
-      height: 235px;
-      margin-bottom: 32px; } }
-  @media screen and (min-width: 980px) {
-    .relates .relate-list {
-      height: 225px;
-      margin-bottom: 23px; } }
-
-.upper-first-text:first-letter {
-  text-transform: uppercase;
-  float: left;
-  padding: 4px 8px 0 0;
-  display: block;
-  color: #f39316;
-  font: 96px/64px sans-serif; }
-
-.project-item {
-  background: #fff;
-  box-shadow: 0px 0px 5px 1px #e1e1e1;
-  width: 100%;
-  margin-bottom: 50px; }
-  @media screen and (min-width: 320px) {
-    .project-item {
-      height: auto; } }
-  @media screen and (min-width: 768px) {
-    .project-item {
-      height: 300px; } }
-  @media screen and (min-width: 1200px) {
-    .project-item {
-      height: 360px; } }
-  .project-item .project-img {
-    overflow: hidden;
-    float: left; }
-    @media screen and (min-width: 320px) {
-      .project-item .project-img {
-        float: none;
-        width: 100%; } }
-    @media screen and (min-width: 768px) {
-      .project-item .project-img {
-        float: left;
-        width: 35%;
-        height: 300px; } }
-    @media screen and (min-width: 1200px) {
-      .project-item .project-img {
-        height: 360px;
-        width: 45%; } }
-    .project-item .project-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .project-item .project-content {
-    padding: 22px;
-    float: left; }
-    @media screen and (min-width: 320px) {
-      .project-item .project-content {
-        float: none;
-        width: 100%; } }
-    @media screen and (min-width: 768px) {
-      .project-item .project-content {
-        width: 65%;
-        float: left;
-        height: 300px; } }
-    @media screen and (min-width: 1200px) {
-      .project-item .project-content {
-        height: 360px;
-        width: 55%; } }
-    .project-item .project-content h3 {
-      font-size: 24px;
-      font-family: SanBold; }
-      .project-item .project-content h3 a {
-        color: #f39316; }
-      @media screen and (min-width: 320px) {
-        .project-item .project-content h3 {
-          margin-bottom: 20px; } }
-      @media screen and (min-width: 1200px) {
-        .project-item .project-content h3 {
-          margin-bottom: 40px; } }
-    .project-item .project-content p {
-      font-size: 14px;
-      color: #9b9b9b;
-      height: 160px; }
-      @media screen and (min-width: 320px) {
-        .project-item .project-content p {
-          height: auto; } }
-    .project-item .project-content .btn-link {
-      font-size: 14px; }
-      .project-item .project-content .btn-link:hover {
-        text-decoration: none; }
-
-.project .btn-custom {
-  padding: 14px 40px; }
-  .project .btn-custom:hover {
-    background: #fff;
-    border: 1px solid #4a90e2;
-    color: #4a90e2; }
-
-.overview {
-  font-size: 18px;
-  padding: 10px 60px;
-  margin: 10px 0px 20px 0px;
-  line-height: 1.6; }
-
-.tag a {
-  background: #4a90e2;
-  color: #fff;
-  font-size: 12px;
-  padding: 5px 14px;
-  border-radius: 5px;
-  display: inline-block;
-  margin-bottom: 5px; }
-  .tag a:hover {
-    background: #2665af; }
-@media screen and (min-width: 320px) {
-  .tag {
-    height: auto;
-    margin-bottom: 10px; } }
-@media screen and (min-width: 980px) {
-  .tag {
-    height: 80px;
-    margin-bottom: 0px; } }
-
-.title-color {
-  color: #4A4A4A; }
-
-.p-top {
-  margin-top: 70px; }
-
-.h3-title {
-  font-weight: 600; }
-  @media screen and (min-width: 320px) {
-    .h3-title {
-      font-size: 23px; } }
-  @media screen and (min-width: 768px) {
-    .h3-title {
-      font-size: 30px; } }
-  @media screen and (min-width: 1200px) {
-    .h3-title {
-      font-size: 45px; } }
-
-.p-content {
-  color: #4A4A4A; }
-  @media screen and (min-width: 320px) {
-    .p-content {
-      font-size: 13px; } }
-  @media screen and (min-width: 1200px) {
-    .p-content {
-      font-size: 16px; } }
-
-.btn-more-all {
-  font-size: 14px;
-  line-height: 16px;
-  color: #FFFFFF;
-  text-align: center;
-  background: #4A90E2;
-  padding: 10px 25px;
-  border-radius: 25px;
-  margin-top: 40px; }
-
-p.content-top {
-  font-family: SanBold;
-  line-height: 1.5;
-  color: #4A4A4A;
-  margin-bottom: 0; }
-  @media screen and (min-width: 320px) {
-    p.content-top {
-      font-size: 18px; } }
-  @media screen and (min-width: 768px) {
-    p.content-top {
-      font-size: 20px; } }
-  @media screen and (min-width: 1200px) {
-    p.content-top {
-      font-size: 24px; } }
-
-.item-help {
-  margin-bottom: 40px;
-  object-fit: cover; }
-  @media (min-width: 768px) {
-    .item-help img {
-      width: 10%; } }
-  @media (max-width: 767.98px) {
-    .item-help img {
-      width: 18%; } }
-
-h5.title-small {
-  font-family: SanBold;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 1.4;
-  color: #4A4A4A; }
-  @media (max-width: 980px) {
-    h5.title-small {
-      font-size: 18px; } }
-
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: -50px;
-  z-index: 1;
-  position: relative; }
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 18px;
-  height: 18px; }
-
-body {
-  counter-reset: sec-counter; }
-
-header {
-  background-color: #fff; }
-  header .top-menu {
-    display: flex;
-    justify-content: space-between; }
-    header .top-menu .logo {
-      object-fit: cover;
-      margin: 16px; }
-      header .top-menu .logo img {
-        width: 80%; }
-    header .top-menu .nav {
-      margin-top: 40px; }
-      header .top-menu .nav ul li {
-        float: left;
-        padding: 0 12px;
-        font-size: 14px;
-        text-transform: uppercase; }
-        header .top-menu .nav ul li a {
-          color: #006644;
-          font-weight: 600; }
-        header .top-menu .nav ul li i#search {
-          padding: 15px;
-          background-color: #006644;
-          border-radius: 50%;
-          font-size: 18px;
-          margin-top: -13px;
-          color: #fff;
-          cursor: pointer; }
-
-.slider .img {
-  padding-top: 143px; }
-  .slider .img .title h3 {
-    font-size: 51px;
-    color: #fff;
-    font-weight: 600;
-    text-transform: uppercase; }
-  .slider .img .title button.more {
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #f39316;
-    border-radius: 29px;
-    border: none;
-    margin-top: 20px; }
-
-.introduce {
-  margin-top: 100px; }
-  .introduce h3 {
-    padding-bottom: 44px; }
-  .introduce .icon {
-    object-fit: cover;
-    min-height: 135px; }
-  .introduce button {
-    color: #fff;
-    background-color: #006644;
-    border: none;
-    margin-top: 55px; }
-  .introduce .tower-left {
-    object-fit: cover; }
-    .introduce .tower-left img {
-      width: 100%; }
-  .introduce .tower-right {
-    object-fit: cover;
-    position: relative; }
-    .introduce .tower-right img {
-      width: 100%;
-      position: absolute;
-      right: 0; }
-
-.advantages {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-  .advantages h3 {
-    padding: 50px; }
-  .advantages p {
-    color: #fff;
-    padding-top: 20px; }
-
-.course {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-  .course h3 {
-    padding: 50px; }
-
-/*# sourceMappingURL=page.css.map */
+Backtrace:
+common.scss:71
+page.scss:1
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/parser.rb:855:in `assert_expr'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1164:in `sass_script'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:486:in `query_expr'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1216:in `expr!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:458:in `media_query'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:426:in `media_query_list'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1216:in `expr!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/bin/scss:13:in `<top (required)>'
+C:/Ruby25-x64/bin/scss:23:in `load'
+C:/Ruby25-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...nd (max-width: \": expected expression (e.g. 1px, bold), was \")\"\A         on line 71 of common.scss\A         from line 1 of page.scss\A \A 66: }\A 67: p.title-content {\A 68: 	font-size: 20px;\A 69: 	color: $color-white;\A 70: 	line-height: 1.5;\A 71: 	@media screen and (max-width: )\A 72: }\A 73: p.content {\A 74: 	font-size: 16px;\A 75: }\A 76: h3.title {"; }
