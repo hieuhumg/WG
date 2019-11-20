@@ -410,10 +410,80 @@ header {
 }
 .opinion {
 	padding-top: 70px;
-	#opinion-content {
-		p.content {
-			margin-top: 40px;
-		}
+    h3 {
+      color: $color-content;
+      font-weight: 600;
+    }
+    p {
+      padding-top: 30px;
+      padding-right: 30px;
+    }
+	#opinion-widget {
+        .owl-item {
+          border-radius: 18px;
+          background-color: $color-title;
+          transition: 0.5s;
+          &:hover {
+            background-color: $color-content;
+          }
+          .thumb {
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+            overflow: hidden;
+            height: 220px;
+            img {
+              height: 100%;
+            }
+          }
+          .name {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            .widget-name {
+              color: $color-white;
+              h4 {
+                font-weight: 600;
+                text-transform: uppercase;
+              }
+            }
+            .widget-fb {
+              i {
+                font-size: 22px;
+                color: $color-white;
+                padding-right: 10px;
+                &:hover {
+                  color: #19bfc7;
+                }
+              }
+
+            }
+
+          }
+          .content {
+            p {
+              font-size: 15px;
+              color: $color-white;
+              padding: 10px 20px;
+              font-style: italic;
+            }
+          }
+
+        }
+      .owl-dots {
+        @media screen and (max-width: $break-tablet){
+          position: relative !important;
+          top: 0 !important;
+          left: 0 !important;
+        }
+        position: absolute !important;
+        left: -53%;
+        top: 54%;
+        .active {
+          span {
+            background: $color-content !important;
+          }
+        }
+      }
 	}
 }
 

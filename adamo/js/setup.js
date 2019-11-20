@@ -21,10 +21,10 @@ $(document).ready(function () {
         }
     });
     //opinion
-    $('#opinion-content').owlCarousel({
-        items:1,
+    $('#opinion-widget').owlCarousel({
+        items:2,
         loop:true,
-        margin:0,
+        margin:30,
         dots: true,
         navigation: true,
         autoplay:false,
@@ -35,6 +35,13 @@ $(document).ready(function () {
             0:{
                 items:1,
                 autoplay:false,
+
+            },
+            768: {
+                items:1,
+            },
+            1200: {
+                dots: true
             }
         }
     });
