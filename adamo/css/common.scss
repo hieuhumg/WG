@@ -15,7 +15,7 @@
 
 
 $break-small: 320px;
-$break-mobile: 400px;
+$break-mobile: 425px;
 $break-tablet: 768px;
 $break-medium: 980px;
 $break-large: 1200px;
@@ -50,11 +50,17 @@ a{
 }
 .btn-common{
 	font-size: 20px;
+	@media screen and (max-width: $break-tablet){
+		font-size: 13px;
+	}
 }
 .btn-border{
 	border:1px solid #4a90e2;
 }
 .btn-size{
+	@media screen and (max-width: $break-mobile) {
+		padding: 12px 15px;
+	}
 	padding: 12px 40px;
 	text-transform: uppercase;
 	border-radius: 29px;
@@ -68,7 +74,9 @@ p.title-content {
 	font-size: 20px;
 	color: $color-white;
 	line-height: 1.5;
-	@media screen and (max-width: )
+	@media screen and (max-width: $break-tablet){
+		font-size: 13px;
+	}
 }
 p.content {
 	font-size: 16px;
@@ -636,11 +644,19 @@ h5.title-small {
 	}
 }
 .owl-theme .owl-nav.disabled+.owl-dots {
+	@media screen and (max-width: $break-tablet) {
+		margin-top: -25px;
+	}
 	margin-top: -50px;
 	z-index: 1;
 	position: relative;
 }
 .owl-theme .owl-dots .owl-dot span {
+	@media screen and (max-width: $break-tablet) {
+		width: 10px;
+		height: 10px;
+	}
 	width: 18px;
 	height: 18px;
+
 }
