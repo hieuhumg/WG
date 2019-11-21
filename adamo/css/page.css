@@ -847,7 +847,6 @@ header {
     color: #006644;
     font-weight: 600; }
   .opinion p {
-    padding-top: 30px;
     padding-right: 30px; }
   .opinion #opinion-widget .owl-item {
     border-radius: 18px;
@@ -870,7 +869,8 @@ header {
         color: #fff; }
         .opinion #opinion-widget .owl-item .name .widget-name h4 {
           font-weight: 600;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          font-size: 20px; }
       .opinion #opinion-widget .owl-item .name .widget-fb i {
         font-size: 22px;
         color: #fff;
@@ -893,5 +893,65 @@ header {
         left: 0 !important; } }
     .opinion #opinion-widget .owl-dots .active span {
       background: #006644 !important; }
+
+main.relic .banner-top {
+  position: relative; }
+  main.relic .banner-top .img-banner img {
+    height: 480px;
+    object-fit: cover; }
+    @media screen and (max-width: 1366px) {
+      main.relic .banner-top .img-banner img {
+        height: 400px; } }
+    @media screen and (max-width: 980px) {
+      main.relic .banner-top .img-banner img {
+        height: 300px; } }
+  main.relic .banner-top .img-banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54%;
+    height: 100%;
+    background: url("../img/relic/banner/background.png") no-repeat top right;
+    background-size: cover; }
+  main.relic .banner-top .title-top {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    main.relic .banner-top .title-top .text {
+      margin-top: 115px;
+      max-width: 500px; }
+      @media screen and (max-width: 1366px) {
+        main.relic .banner-top .title-top .text {
+          max-width: 384px; } }
+      @media screen and (max-width: 980px) {
+        main.relic .banner-top .title-top .text {
+          max-width: 280px;
+          margin-top: 50px; } }
+      main.relic .banner-top .title-top .text h1 {
+        font-size: 46px;
+        color: #f39316;
+        font-weight: 600; }
+        @media screen and (max-width: 1366px) {
+          main.relic .banner-top .title-top .text h1 {
+            font-size: 33px; } }
+        @media screen and (max-width: 980px) {
+          main.relic .banner-top .title-top .text h1 {
+            font-size: 27px; } }
+        main.relic .banner-top .title-top .text h1 span {
+          display: inline-block;
+          color: #fff;
+          padding: 10px 20px;
+          position: relative;
+          background: #064;
+          padding-top: 15px;
+          border-radius: 10px;
+          -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%);
+          clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%); }
+          @media screen and (max-width: 980px) {
+            main.relic .banner-top .title-top .text h1 span {
+              padding: 5px 13px; } }
+      main.relic .banner-top .title-top .text p {
+        margin-top: 30px; }
 
 /*# sourceMappingURL=page.css.map */

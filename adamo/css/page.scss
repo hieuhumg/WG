@@ -415,7 +415,6 @@ header {
       font-weight: 600;
     }
     p {
-      padding-top: 30px;
       padding-right: 30px;
     }
 	#opinion-widget {
@@ -444,6 +443,7 @@ header {
               h4 {
                 font-weight: 600;
                 text-transform: uppercase;
+				  font-size: 20px;
               }
             }
             .widget-fb {
@@ -484,6 +484,77 @@ header {
           }
         }
       }
+	}
+}
+main.relic {
+	.banner-top {
+		position: relative;
+		.img-banner {
+			img {
+				@media screen and (max-width: $break-big){
+					height: 400px;
+				}
+				@media screen and (max-width: $break-medium) {
+					height: 300px;
+				}
+				height: 480px;
+				object-fit: cover;
+			}
+		}
+		.img-banner:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 54%;
+			height: 100%;
+			background: url('../img/relic/banner/background.png') no-repeat top right;
+			background-size: cover;
+		}
+		.title-top {
+			position: absolute;
+			top: 0;
+			left: 0;
+			.text {
+				@media screen and (max-width: $break-big) {
+					max-width: 384px;
+				}
+				@media screen and (max-width: $break-medium) {
+					max-width: 280px;
+					margin-top: 50px;
+				}
+				margin-top: 115px;
+				max-width: 500px;
+				h1 {
+					@media screen and (max-width: $break-big) {
+						font-size: 33px;
+					}
+					@media screen and (max-width: $break-medium) {
+						font-size: 27px;
+					}
+					font-size: 46px;
+					color: $color-title;
+					font-weight: 600;
+					span {
+						@media screen and (max-width: $break-medium) {
+							padding: 5px 13px;
+						}
+						display: inline-block;
+						color: #fff;
+						padding: 10px 20px;
+						position: relative;
+						background: #064;
+						padding-top: 15px;
+						border-radius: 10px;
+						-webkit-clip-path: polygon(100% 0,100% 100%,50% 100%,3% 100%,0 17%);
+						clip-path: polygon(100% 0,100% 100%,50% 100%,3% 100%,0 17%);
+					}
+				}
+				p {
+					margin-top: 30px;
+				}
+			}
+		}
 	}
 }
 

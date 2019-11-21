@@ -38,9 +38,7 @@ $(document).ready(function () {
 
             },
             768: {
-                items:1,
-            },
-            1200: {
+                items:2,
                 dots: true
             }
         }
