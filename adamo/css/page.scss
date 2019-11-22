@@ -556,6 +556,77 @@ main.relic {
 			}
 		}
 	}
+	// end style banner-top
+	.student {
+		.widget {
+			display: flex;
+			.avatar {
+				flex: 0 0 40%;
+				text-align: center;
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+				padding: 25px 0;
+				background: $color-content;
+				h3 {
+					font-size: 24px;
+					color: $color-white;
+					font-weight: 600;
+					padding-top: 10px;
+				}
+				.logo {
+					i {
+						color: $color-white;
+						font-size: 20px;
+						//padding-left: 10px;
+					}
+					i:nth-child(1) {
+						padding-right: 10px;
+					}
+				}
+				.img-info {
+					img	{
+						width: 135px;
+						height: 135px;
+						border-radius: 50%;
+						-o-object-fit: cover;
+						object-fit: cover;
+					}
+				}
+			}
+			.content {
+				flex: 0 0 60%;
+				.list {
+					padding-bottom: 20px;
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					align-items: center;
+					-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+					-webkit-box-pack: center;
+					-ms-flex-pack: center;
+					justify-content: center;
+					li {
+						flex: 0;
+						.text {
+							font-size: 14px;
+							font-weight: 700;
+							text-transform: uppercase;
+							color: #404040;
+							padding-bottom: 15px;
+						}
+						.number {
+							font-size: 25px;
+							font-weight: 700;
+							color: #098648;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 

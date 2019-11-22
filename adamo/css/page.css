@@ -953,5 +953,57 @@ main.relic .banner-top {
               padding: 5px 13px; } }
       main.relic .banner-top .title-top .text p {
         margin-top: 30px; }
+main.relic .student .widget {
+  display: flex; }
+  main.relic .student .widget .avatar {
+    flex: 0 0 40%;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 25px 0;
+    background: #006644; }
+    main.relic .student .widget .avatar h3 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 600;
+      padding-top: 10px; }
+    main.relic .student .widget .avatar .logo i {
+      color: #fff;
+      font-size: 20px; }
+    main.relic .student .widget .avatar .logo i:nth-child(1) {
+      padding-right: 10px; }
+    main.relic .student .widget .avatar .img-info img {
+      width: 135px;
+      height: 135px;
+      border-radius: 50%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  main.relic .student .widget .content {
+    flex: 0 0 60%; }
+    main.relic .student .widget .content .list {
+      padding-bottom: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      main.relic .student .widget .content .list li {
+        flex: 0; }
+        main.relic .student .widget .content .list li .text {
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #404040;
+          padding-bottom: 15px; }
+        main.relic .student .widget .content .list li .number {
+          font-size: 25px;
+          font-weight: 700;
+          color: #098648; }
 
 /*# sourceMappingURL=page.css.map */
