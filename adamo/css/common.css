@@ -545,4 +545,62 @@ h5.title-small {
       width: 10px;
       height: 10px; } }
 
+.scholarship {
+  margin-top: 20px; }
+  .scholarship .thumb {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    object-position: right;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto; }
+    .scholarship .thumb img {
+      position: absolute; }
+  .scholarship .info {
+    border-right: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7; }
+    .scholarship .info h5 {
+      color: #006644;
+      padding-top: 25px; }
+    .scholarship .info .ashford {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 30px; }
+      .scholarship .info .ashford .img {
+        position: relative; }
+    .scholarship .info .img:after {
+      content: "";
+      height: 60px;
+      color: #d7d7d7;
+      border: 1px solid;
+      position: absolute;
+      right: -25px; }
+    .scholarship .info .ashford-content {
+      color: #f39316;
+      text-align: left; }
+      .scholarship .info .ashford-content p {
+        font-size: 11px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        margin-top: 3px; }
+      .scholarship .info .ashford-content p.top {
+        font-size: 24px;
+        font-weight: 600; }
+    .scholarship .info .totallity {
+      margin-top: 30px; }
+      .scholarship .info .totallity p {
+        margin-bottom: 3px;
+        color: #28292d; }
+      .scholarship .info .totallity p.hocbong {
+        padding: 10px;
+        margin: 0px 20px;
+        border-radius: 25px 0px;
+        background-color: #f39316;
+        font-weight: 600;
+        color: #fff; }
+
 /*# sourceMappingURL=common.css.map */

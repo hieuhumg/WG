@@ -545,6 +545,64 @@ h5.title-small {
       width: 10px;
       height: 10px; } }
 
+.scholarship {
+  margin-top: 20px; }
+  .scholarship .thumb {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    object-position: right;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto; }
+    .scholarship .thumb img {
+      position: absolute; }
+  .scholarship .info {
+    border-right: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7; }
+    .scholarship .info h5 {
+      color: #006644;
+      padding-top: 25px; }
+    .scholarship .info .ashford {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 30px; }
+      .scholarship .info .ashford .img {
+        position: relative; }
+    .scholarship .info .img:after {
+      content: "";
+      height: 60px;
+      color: #d7d7d7;
+      border: 1px solid;
+      position: absolute;
+      right: -25px; }
+    .scholarship .info .ashford-content {
+      color: #f39316;
+      text-align: left; }
+      .scholarship .info .ashford-content p {
+        font-size: 11px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        margin-top: 3px; }
+      .scholarship .info .ashford-content p.top {
+        font-size: 24px;
+        font-weight: 600; }
+    .scholarship .info .totallity {
+      margin-top: 30px; }
+      .scholarship .info .totallity p {
+        margin-bottom: 3px;
+        color: #28292d; }
+      .scholarship .info .totallity p.hocbong {
+        padding: 10px;
+        margin: 0px 20px;
+        border-radius: 25px 0px;
+        background-color: #f39316;
+        font-weight: 600;
+        color: #fff; }
+
 body {
   counter-reset: sec-counter; }
 
@@ -776,63 +834,6 @@ header {
         background-color: #006644;
         color: #fff;
         border-radius: 28px; }
-  .achievement .scholarship {
-    margin-top: 20px; }
-    .achievement .scholarship .thumb {
-      height: 150px;
-      width: 150px;
-      overflow: hidden;
-      object-position: right;
-      object-fit: cover;
-      border-radius: 50%;
-      position: relative;
-      text-align: center;
-      margin: 0 auto; }
-      .achievement .scholarship .thumb img {
-        position: absolute; }
-    .achievement .scholarship .info {
-      border-right: 1px solid #d7d7d7;
-      border-left: 1px solid #d7d7d7; }
-      .achievement .scholarship .info h5 {
-        color: #006644;
-        padding-top: 25px; }
-      .achievement .scholarship .info .ashford {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 30px; }
-        .achievement .scholarship .info .ashford .img {
-          position: relative; }
-      .achievement .scholarship .info .img:after {
-        content: "";
-        height: 60px;
-        color: #d7d7d7;
-        border: 1px solid;
-        position: absolute;
-        right: -25px; }
-      .achievement .scholarship .info .ashford-content {
-        color: #f39316;
-        text-align: left; }
-        .achievement .scholarship .info .ashford-content p {
-          font-size: 11px;
-          margin-bottom: 5px;
-          font-weight: 600;
-          margin-top: 3px; }
-        .achievement .scholarship .info .ashford-content p.top {
-          font-size: 24px;
-          font-weight: 600; }
-      .achievement .scholarship .info .totallity {
-        margin-top: 30px; }
-        .achievement .scholarship .info .totallity p {
-          margin-bottom: 3px;
-          color: #28292d; }
-        .achievement .scholarship .info .totallity p.hocbong {
-          padding: 10px;
-          margin: 0px 20px;
-          border-radius: 25px 0px;
-          background-color: #f39316;
-          font-weight: 600;
-          color: #fff; }
   .achievement button {
     background-color: #006644;
     color: #fff;
@@ -894,18 +895,18 @@ header {
     .opinion #opinion-widget .owl-dots .active span {
       background: #006644 !important; }
 
-main.relic .banner-top {
+.banner-top-achievements {
   position: relative; }
-  main.relic .banner-top .img-banner img {
+  .banner-top-achievements .img-banner img {
     height: 480px;
     object-fit: cover; }
     @media screen and (max-width: 1366px) {
-      main.relic .banner-top .img-banner img {
+      .banner-top-achievements .img-banner img {
         height: 400px; } }
     @media screen and (max-width: 980px) {
-      main.relic .banner-top .img-banner img {
+      .banner-top-achievements .img-banner img {
         height: 300px; } }
-  main.relic .banner-top .img-banner:before {
+  .banner-top-achievements .img-banner:before {
     content: "";
     position: absolute;
     top: 0;
@@ -914,31 +915,31 @@ main.relic .banner-top {
     height: 100%;
     background: url("../img/relic/banner/background.png") no-repeat top right;
     background-size: cover; }
-  main.relic .banner-top .title-top {
+  .banner-top-achievements .title-top {
     position: absolute;
     top: 0;
     left: 0; }
-    main.relic .banner-top .title-top .text {
+    .banner-top-achievements .title-top .text {
       margin-top: 115px;
       max-width: 500px; }
       @media screen and (max-width: 1366px) {
-        main.relic .banner-top .title-top .text {
+        .banner-top-achievements .title-top .text {
           max-width: 384px; } }
       @media screen and (max-width: 980px) {
-        main.relic .banner-top .title-top .text {
+        .banner-top-achievements .title-top .text {
           max-width: 280px;
           margin-top: 50px; } }
-      main.relic .banner-top .title-top .text h1 {
+      .banner-top-achievements .title-top .text h1 {
         font-size: 46px;
         color: #f39316;
         font-weight: 600; }
         @media screen and (max-width: 1366px) {
-          main.relic .banner-top .title-top .text h1 {
+          .banner-top-achievements .title-top .text h1 {
             font-size: 33px; } }
         @media screen and (max-width: 980px) {
-          main.relic .banner-top .title-top .text h1 {
+          .banner-top-achievements .title-top .text h1 {
             font-size: 27px; } }
-        main.relic .banner-top .title-top .text h1 span {
+        .banner-top-achievements .title-top .text h1 span {
           display: inline-block;
           color: #fff;
           padding: 10px 20px;
@@ -949,39 +950,53 @@ main.relic .banner-top {
           -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%);
           clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%); }
           @media screen and (max-width: 980px) {
-            main.relic .banner-top .title-top .text h1 span {
+            .banner-top-achievements .title-top .text h1 span {
               padding: 5px 13px; } }
-      main.relic .banner-top .title-top .text p {
+      .banner-top-achievements .title-top .text p {
         margin-top: 30px; }
-main.relic .student .widget {
-  display: flex; }
-  main.relic .student .widget .avatar {
+
+.student .widget {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px; }
+  .student .widget .avatar {
     flex: 0 0 40%;
     text-align: center;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 25px 0;
     background: #006644; }
-    main.relic .student .widget .avatar h3 {
+    @media screen and (max-width: 1200px) {
+      .student .widget .avatar {
+        flex: 0 0 100%;
+        border-radius: 10px; } }
+    .student .widget .avatar h3 {
       font-size: 24px;
       color: #fff;
       font-weight: 600;
       padding-top: 10px; }
-    main.relic .student .widget .avatar .logo i {
+    .student .widget .avatar .logo i {
       color: #fff;
       font-size: 20px; }
-    main.relic .student .widget .avatar .logo i:nth-child(1) {
+    .student .widget .avatar .logo i:nth-child(1) {
       padding-right: 10px; }
-    main.relic .student .widget .avatar .img-info img {
+    .student .widget .avatar .img-info img {
       width: 135px;
       height: 135px;
       border-radius: 50%;
       -o-object-fit: cover;
       object-fit: cover; }
-  main.relic .student .widget .content {
-    flex: 0 0 60%; }
-    main.relic .student .widget .content .list {
-      padding-bottom: 20px;
+  .student .widget .content {
+    flex: 0 0 60%;
+    background: #f4f4f4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    @media screen and (max-width: 1200px) {
+      .student .widget .content {
+        flex: 0 0 100%;
+        border-radius: 10px; } }
+    .student .widget .content .list {
+      padding-bottom: 10px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -992,18 +1007,294 @@ main.relic .student .widget {
       flex-wrap: wrap;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
-      main.relic .student .widget .content .list li {
-        flex: 0; }
-        main.relic .student .widget .content .list li .text {
+      justify-content: center;
+      margin-top: 30px; }
+      .student .widget .content .list li {
+        padding-top: 10px;
+        display: flex;
+        flex-flow: column;
+        flex: 0 0 33.33%;
+        align-items: center;
+        border-right: 1px solid #CCCCCC; }
+        .student .widget .content .list li .text {
           font-size: 14px;
           font-weight: 700;
           text-transform: uppercase;
           color: #404040;
-          padding-bottom: 15px; }
-        main.relic .student .widget .content .list li .number {
+          padding-bottom: 10px; }
+        .student .widget .content .list li .number {
           font-size: 25px;
           font-weight: 700;
           color: #098648; }
+      .student .widget .content .list li:last-child {
+        border-right: none; }
+    .student .widget .content .exam {
+      border-radius: 15px 0;
+      background: #f39316;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      margin: 0 30px;
+      padding-top: 2px; }
+    .student .widget .content .ashford {
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 30px; }
+      .student .widget .content .ashford .img {
+        position: relative; }
+      .student .widget .content .ashford .img:after {
+        content: "";
+        height: 60px;
+        color: #d7d7d7;
+        border: 1px solid;
+        position: absolute;
+        right: -25px; }
+      .student .widget .content .ashford .ashford-content {
+        color: #f39316;
+        text-align: left; }
+        .student .widget .content .ashford .ashford-content p {
+          font-size: 18px;
+          margin-bottom: 5px;
+          margin-top: 3px; }
+        .student .widget .content .ashford .ashford-content p.top {
+          font-size: 18px;
+          font-weight: 600; }
+
+.apply-achiements {
+  position: relative;
+  z-index: 2;
+  margin-top: -150px;
+  padding-bottom: 55px; }
+  .apply-achiements .widget-apply {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+    .apply-achiements .widget-apply .title-apply {
+      margin-bottom: 25px;
+      position: relative; }
+      .apply-achiements .widget-apply .title-apply h2 {
+        width: 270px;
+        background: #006644;
+        border-radius: 30px;
+        height: 58px;
+        text-align: center;
+        line-height: 58px;
+        font-size: 26px;
+        color: #fff;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+        text-transform: uppercase; }
+    .apply-achiements .widget-apply .title-apply:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #064;
+      content: "";
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      z-index: 1; }
+    .apply-achiements .widget-apply .list-apply {
+      background: #fff;
+      border-radius: 15px; }
+  .apply-achiements .contact-apply {
+    display: none;
+    margin-bottom: 25px;
+    position: relative;
+    margin-top: 40px; }
+    .apply-achiements .contact-apply a {
+      position: relative;
+      display: inline-block; }
+      .apply-achiements .contact-apply a img {
+        width: 75px;
+        height: 75px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 50%;
+        z-index: 2;
+        position: absolute;
+        top: -19px;
+        left: -20px; }
+      .apply-achiements .contact-apply a span {
+        display: block;
+        width: max-content;
+        height: 55px;
+        background: #fff;
+        text-align: center;
+        font-size: 16px;
+        color: #064;
+        font-weight: 700;
+        -webkit-box-shadow: 0 0 10px 3px #f4f4f4;
+        box-shadow: 0 0 10px 3px #f4f4f4;
+        line-height: 55px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 0 30px;
+        margin: 0 auto;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        padding-left: 75px; }
+
+.list-schooll {
+  background: url("../img/achievements-student/banner/background.jpg") no-repeat;
+  background-size: cover;
+  padding: 70px 0; }
+  .list-schooll h3 span {
+    color: #006644; }
+  .list-schooll .widget-list-schooll {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px; }
+    .list-schooll .widget-list-schooll .box {
+      flex: 0 0 16.6666666667%;
+      max-width: 100%;
+      padding: 0 1px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      background: #fff; }
+      @media screen and (max-width: 980px) {
+        .list-schooll .widget-list-schooll .box {
+          flex: 0 0 20%; } }
+      @media screen and (max-width: 768px) {
+        .list-schooll .widget-list-schooll .box {
+          flex: 0 0 33.333%; } }
+      @media screen and (max-width: 425px) {
+        .list-schooll .widget-list-schooll .box {
+          flex: 0 0 50%; } }
+      .list-schooll .widget-list-schooll .box img {
+        width: 100px;
+        object-fit: cover;
+        padding: 34px 0; }
+      .list-schooll .widget-list-schooll .box span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 68%;
+        height: 32px;
+        background: #064;
+        border-top-right-radius: 50px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 32px;
+        padding-right: 20px; }
+      .list-schooll .widget-list-schooll .box span:before {
+        content: "";
+        width: 8px;
+        height: 100%;
+        background: #f39316;
+        border-top-right-radius: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+
+.banner-top-why {
+  position: relative; }
+  .banner-top-why .img-banner img {
+    height: 532px;
+    object-fit: cover; }
+    @media screen and (max-width: 1366px) {
+      .banner-top-why .img-banner img {
+        height: 585px; } }
+    @media screen and (max-width: 980px) {
+      .banner-top-why .img-banner img {
+        height: 557px; } }
+  .banner-top-why .title-top {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .banner-top-why .title-top .text {
+      margin-top: 115px;
+      max-width: 676px; }
+      @media screen and (max-width: 1366px) {
+        .banner-top-why .title-top .text {
+          max-width: 384px; } }
+      @media screen and (max-width: 980px) {
+        .banner-top-why .title-top .text {
+          max-width: 280px;
+          margin-top: 50px; } }
+      .banner-top-why .title-top .text h1 {
+        font-size: 46px;
+        color: #f39316;
+        font-weight: 600; }
+        @media screen and (max-width: 1366px) {
+          .banner-top-why .title-top .text h1 {
+            font-size: 33px; } }
+        @media screen and (max-width: 980px) {
+          .banner-top-why .title-top .text h1 {
+            font-size: 27px; } }
+        .banner-top-why .title-top .text h1 span {
+          display: inline-block;
+          color: #fff;
+          padding: 10px 20px;
+          position: relative;
+          background: #064;
+          padding-top: 15px;
+          border-radius: 10px;
+          -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%);
+          clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%); }
+          @media screen and (max-width: 980px) {
+            .banner-top-why .title-top .text h1 span {
+              padding: 5px 13px; } }
+      .banner-top-why .title-top .text p {
+        margin-top: 30px; }
+
+.service {
+  background: url("../img/why/banner/background-2.jpg") no-repeat;
+  background-size: cover;
+  padding: 70px 0; }
+  .service h3 {
+    color: #f39316; }
+    .service h3 span {
+      color: #fff; }
+  .service p.content {
+    color: #006644;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 30px; }
+  .service .img-service {
+    overflow: hidden;
+    border-radius: 10px; }
+    .service .img-service img {
+      object-fit: cover;
+      width: 100%; }
+  .service ul.list-title li {
+    display: flex;
+    padding-top: 10px;
+    align-items: baseline; }
+    .service ul.list-title li i {
+      color: #fff;
+      padding-right: 10px; }
+    .service ul.list-title li span {
+      text-transform: uppercase;
+      color: #fff; }
+
+.endow {
+  background: #044531;
+  padding: 70px 0; }
+  .endow h5 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff; }
+  .endow .img-endow {
+    background: url("../img/why/endow-1.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 226px;
+    padding: 22px;
+    margin-top: 20px; }
+    .endow .img-endow h4 {
+      font-size: 30px;
+      flex: 0 0 45%;
+      color: #fff; }
+    .endow .img-endow p {
+      flex: 0 0 55%;
+      color: #fff; }
 
 /*# sourceMappingURL=page.css.map */

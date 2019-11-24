@@ -660,3 +660,78 @@ h5.title-small {
 	height: 18px;
 
 }
+.scholarship {
+  margin-top: 20px;
+  .thumb {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    object-position: right;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    img {
+      position: absolute;
+    }
+  }
+  .info {
+    border-right: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    h5 {
+      color: $color-content;
+      padding-top: 25px;
+    }
+    .ashford {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 30px;
+      .img {
+        position: relative;
+        ::after {
+
+        }
+      }
+    }
+    .img:after {
+      content: "";
+      height: 60px;
+      color: #d7d7d7;
+      border: 1px solid;
+      position: absolute;
+      right: -25px;
+    }
+    .ashford-content {
+      color: $color-title;
+      text-align: left;
+      p {
+        font-size: 11px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        margin-top: 3px;
+      }
+      p.top {
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+    .totallity {
+      margin-top: 30px;
+      p {
+        margin-bottom: 3px;
+        color: #28292d;
+      }
+      p.hocbong {
+        padding: 10px ;
+        margin: 0px 20px;
+        border-radius: 25px 0px;
+        background-color: $color-title;
+        font-weight: 600;
+        color: $color-white;
+      }
+
+    }
+  }
+}
