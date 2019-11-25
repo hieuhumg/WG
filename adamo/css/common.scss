@@ -106,6 +106,12 @@ h5.title {
 		font-size: 18px;
 	}
 }
+.p-70 {
+	padding: 70px 0;
+	@media screen and (max-width: $break-tablet) {
+		padding: 20px 0;
+	}
+}
 .bg-content{
 	background: url('../img/anh_nen_thu_2.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -734,4 +740,83 @@ h5.title-small {
 
     }
   }
+}
+ul.list-title {
+	li {
+		display: flex;
+		padding-top: 10px;
+		align-items: baseline;
+		i {
+			color: $color-white;
+			padding-right: 10px;
+		}
+		span {
+			text-transform: uppercase;
+			color: $color-white;
+		}
+	}
+}
+.contact {
+	margin-top: 20px;
+	@media screen and (max-width: $break-tablet) {
+		text-align: center !important;
+	}
+	a {
+		&:hover {
+			span {
+				background: $color-content;
+				color: $color-white;
+			}
+		}
+		position: relative;
+		display: inline-block;
+		img {
+			@media screen and (max-width: $break-tablet) {
+				position: inherit;
+				left: 0;
+				top: 0;
+			}
+			width: 75px;
+			height: 75px;
+			-o-object-fit: cover;
+			object-fit: cover;
+			border-radius: 50%;
+			z-index: 2;
+			position: absolute;
+			top: -14px;
+			left: -20px;
+		}
+		span {
+			@media screen and (max-width: $break-tablet) {
+				height: auto;
+				width: auto;
+				line-height: 1.5;
+				padding: 10px;
+				font-size: 15px;
+				border-radius: 30px;
+				margin-top: 10px;
+			}
+			display: block;
+			width: max-content;
+			height: 55px;
+			background: #fff;
+			text-align: center;
+			font-size: 16px;
+			color: #064;
+			font-weight: 700;
+			-webkit-box-shadow: 0 0 10px 3px #f4f4f4;
+			box-shadow: 0 0 10px 3px #f4f4f4;
+			line-height: 55px;
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 30px;
+			padding: 0 30px;
+			margin: 0 auto;
+			-webkit-transition: all .3s;
+			transition: all .3s;
+			padding-left: 75px;
+		}
+	}
+}
+.p-custom {
+  padding: 0 1px;
 }
