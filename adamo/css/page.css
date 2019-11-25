@@ -74,6 +74,45 @@ h5.title {
   text-transform: uppercase;
   font-weight: 600; }
 
+h3.title-news {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #006644;
+  padding-bottom: 20px; }
+
+h4.title-news {
+  font-size: 35px;
+  color: #006644; }
+  @media screen and (max-width: 768px) {
+    h4.title-news {
+      padding-top: 15px;
+      font-size: 25px; } }
+
+h5.title-news {
+  font-size: 20px;
+  color: #006644; }
+
+p.content-news {
+  font-size: 14px;
+  margin-bottom: 5px; }
+
+p.date {
+  font-size: 13px;
+  margin-bottom: 5px; }
+
+p.italic {
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic; }
+
+p.content-news {
+  font-size: 16px;
+  text-align: justify;
+  margin: 25px 0;
+  line-height: 1.7rem; }
+
 .bg-fix {
   padding: 180px 0px 124px 0px;
   color: #fff; }
@@ -678,6 +717,46 @@ ul.list-title li {
 .p-custom {
   padding: 0 1px; }
 
+.widget-parent {
+  margin-top: 30px;
+  border-radius: 18px;
+  background-color: #f39316;
+  transition: 0.5s; }
+  .widget-parent:hover {
+    background-color: #006644; }
+  .widget-parent .thumb {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    overflow: hidden;
+    height: 220px; }
+    .widget-parent .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .widget-parent .name {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; }
+    .widget-parent .name .widget-name {
+      color: #fff; }
+      .widget-parent .name .widget-name h4 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 20px; }
+    .widget-parent .name .widget-fb i {
+      font-size: 22px;
+      color: #fff;
+      padding-right: 10px; }
+      .widget-parent .name .widget-fb i:hover {
+        color: #19bfc7; }
+  .widget-parent .content {
+    padding: 8px 0px; }
+    .widget-parent .content p {
+      font-size: 15px;
+      color: #fff;
+      padding: 10px 20px;
+      font-style: italic; }
+
 body {
   counter-reset: sec-counter; }
 
@@ -924,40 +1003,6 @@ header {
     font-weight: 600; }
   .opinion p {
     padding-right: 30px; }
-  .opinion #opinion-widget .owl-item {
-    border-radius: 18px;
-    background-color: #f39316;
-    transition: 0.5s; }
-    .opinion #opinion-widget .owl-item:hover {
-      background-color: #006644; }
-    .opinion #opinion-widget .owl-item .thumb {
-      border-top-left-radius: 18px;
-      border-top-right-radius: 18px;
-      overflow: hidden;
-      height: 220px; }
-      .opinion #opinion-widget .owl-item .thumb img {
-        height: 100%; }
-    .opinion #opinion-widget .owl-item .name {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 20px; }
-      .opinion #opinion-widget .owl-item .name .widget-name {
-        color: #fff; }
-        .opinion #opinion-widget .owl-item .name .widget-name h4 {
-          font-weight: 600;
-          text-transform: uppercase;
-          font-size: 20px; }
-      .opinion #opinion-widget .owl-item .name .widget-fb i {
-        font-size: 22px;
-        color: #fff;
-        padding-right: 10px; }
-        .opinion #opinion-widget .owl-item .name .widget-fb i:hover {
-          color: #19bfc7; }
-    .opinion #opinion-widget .owl-item .content p {
-      font-size: 15px;
-      color: #fff;
-      padding: 10px 20px;
-      font-style: italic; }
   .opinion #opinion-widget .owl-dots {
     position: absolute !important;
     left: -53%;
@@ -970,18 +1015,18 @@ header {
     .opinion #opinion-widget .owl-dots .active span {
       background: #006644 !important; }
 
-.banner-top-achievements, .banner-top-basic {
+.banner-top-achievements, .banner-top-basic, .banner-top-target, .banner-top-share {
   position: relative; }
-  .banner-top-achievements .img-banner img, .banner-top-basic .img-banner img {
+  .banner-top-achievements .img-banner img, .banner-top-basic .img-banner img, .banner-top-target .img-banner img, .banner-top-share .img-banner img {
     height: 480px;
     object-fit: cover; }
     @media screen and (max-width: 1366px) {
-      .banner-top-achievements .img-banner img, .banner-top-basic .img-banner img {
+      .banner-top-achievements .img-banner img, .banner-top-basic .img-banner img, .banner-top-target .img-banner img, .banner-top-share .img-banner img {
         height: 400px; } }
     @media screen and (max-width: 980px) {
-      .banner-top-achievements .img-banner img, .banner-top-basic .img-banner img {
+      .banner-top-achievements .img-banner img, .banner-top-basic .img-banner img, .banner-top-target .img-banner img, .banner-top-share .img-banner img {
         height: 300px; } }
-  .banner-top-achievements .img-banner:before, .banner-top-basic .img-banner:before {
+  .banner-top-achievements .img-banner:before, .banner-top-basic .img-banner:before, .banner-top-target .img-banner:before, .banner-top-share .img-banner:before {
     content: "";
     position: absolute;
     top: 0;
@@ -990,31 +1035,31 @@ header {
     height: 100%;
     background: url("../img/relic/banner/background.png") no-repeat top right;
     background-size: cover; }
-  .banner-top-achievements .title-top, .banner-top-basic .title-top {
+  .banner-top-achievements .title-top, .banner-top-basic .title-top, .banner-top-target .title-top, .banner-top-share .title-top {
     position: absolute;
     top: 0;
     left: 0; }
-    .banner-top-achievements .title-top .text, .banner-top-basic .title-top .text {
+    .banner-top-achievements .title-top .text, .banner-top-basic .title-top .text, .banner-top-target .title-top .text, .banner-top-share .title-top .text {
       margin-top: 115px;
       max-width: 500px; }
       @media screen and (max-width: 1366px) {
-        .banner-top-achievements .title-top .text, .banner-top-basic .title-top .text {
+        .banner-top-achievements .title-top .text, .banner-top-basic .title-top .text, .banner-top-target .title-top .text, .banner-top-share .title-top .text {
           max-width: 384px; } }
       @media screen and (max-width: 980px) {
-        .banner-top-achievements .title-top .text, .banner-top-basic .title-top .text {
+        .banner-top-achievements .title-top .text, .banner-top-basic .title-top .text, .banner-top-target .title-top .text, .banner-top-share .title-top .text {
           max-width: 280px;
           margin-top: 50px; } }
-      .banner-top-achievements .title-top .text h1, .banner-top-basic .title-top .text h1 {
+      .banner-top-achievements .title-top .text h1, .banner-top-basic .title-top .text h1, .banner-top-target .title-top .text h1, .banner-top-share .title-top .text h1 {
         font-size: 46px;
         color: #f39316;
         font-weight: 600; }
         @media screen and (max-width: 1366px) {
-          .banner-top-achievements .title-top .text h1, .banner-top-basic .title-top .text h1 {
+          .banner-top-achievements .title-top .text h1, .banner-top-basic .title-top .text h1, .banner-top-target .title-top .text h1, .banner-top-share .title-top .text h1 {
             font-size: 33px; } }
         @media screen and (max-width: 980px) {
-          .banner-top-achievements .title-top .text h1, .banner-top-basic .title-top .text h1 {
+          .banner-top-achievements .title-top .text h1, .banner-top-basic .title-top .text h1, .banner-top-target .title-top .text h1, .banner-top-share .title-top .text h1 {
             font-size: 27px; } }
-        .banner-top-achievements .title-top .text h1 span, .banner-top-basic .title-top .text h1 span {
+        .banner-top-achievements .title-top .text h1 span, .banner-top-basic .title-top .text h1 span, .banner-top-target .title-top .text h1 span, .banner-top-share .title-top .text h1 span {
           display: inline-block;
           color: #fff;
           padding: 10px 20px;
@@ -1025,9 +1070,9 @@ header {
           -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%);
           clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%); }
           @media screen and (max-width: 980px) {
-            .banner-top-achievements .title-top .text h1 span, .banner-top-basic .title-top .text h1 span {
+            .banner-top-achievements .title-top .text h1 span, .banner-top-basic .title-top .text h1 span, .banner-top-target .title-top .text h1 span, .banner-top-share .title-top .text h1 span {
               padding: 5px 13px; } }
-      .banner-top-achievements .title-top .text p, .banner-top-basic .title-top .text p {
+      .banner-top-achievements .title-top .text p, .banner-top-basic .title-top .text p, .banner-top-target .title-top .text p, .banner-top-share .title-top .text p {
         margin-top: 30px; }
 
 .student .widget {
@@ -1707,6 +1752,94 @@ header {
             font-weight: 800; }
       .no-fear .box-student .content .point:last-child h3 span {
         color: #006644; }
+
+.banner-top-target .img-banner img, .banner-top-share .img-banner img {
+  height: 400px !important; }
+  @media screen and (max-width: 768px) {
+    .banner-top-target .img-banner img, .banner-top-share .img-banner img {
+      height: 235px !important; } }
+.banner-top-target .title-top .text, .banner-top-share .title-top .text {
+  margin-top: 82px !important;
+  margin-left: 30px; }
+  .banner-top-target .title-top .text span, .banner-top-share .title-top .text span {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    background: #064;
+    padding-top: 15px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%);
+    clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%); }
+
+.target-action p.content {
+  font-size: 20px;
+  font-weight: 600; }
+.target-action .widget-action h3.title span {
+  color: #006644; }
+.target-action .widget-action p {
+  padding-top: 10px;
+  line-height: 1.5; }
+.target-action .widget-action ul.list-title li i {
+  color: #006644; }
+.target-action .widget-action ul.list-title li span {
+  color: black;
+  text-transform: inherit; }
+
+.news-mains .news-img {
+  max-height: 375px; }
+  .news-mains .news-img img {
+    width: 100%;
+    object-fit: cover; }
+.news-mains h4.title-news {
+  font-weight: 600; }
+  .news-mains h4.title-news a {
+    color: #006644; }
+
+.latest-news h3.title-news, .detail-news h3.title-news {
+  margin-top: 20px; }
+.latest-news .description h5.laster a, .detail-news .description h5.laster a {
+  color: #006644; }
+.latest-news .description h5.title-news, .detail-news .description h5.title-news {
+  margin-top: 10px; }
+  .latest-news .description h5.title-news a, .detail-news .description h5.title-news a {
+    color: black; }
+.latest-news a.page-link, .detail-news a.page-link {
+  color: black; }
+.latest-news a.page-link:hover, .detail-news a.page-link:hover {
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+  background-color: #006644;
+  border-color: #006644; }
+
+.detail-news .detail h3.title-news a {
+  color: #424242; }
+.detail-news .icon {
+  display: flex;
+  justify-content: flex-start; }
+  .detail-news .icon p.content {
+    padding-right: 20px; }
+  .detail-news .icon .logo a i {
+    font-size: 25px;
+    padding-right: 5px; }
+.detail-news .related-news {
+  padding-bottom: 20px; }
+  .detail-news .related-news h5.title-news a {
+    color: #006644; }
+  .detail-news .related-news .related-content {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 20px;
+    margin-top: 20px; }
+    .detail-news .related-news .related-content h5.title-news {
+      font-weight: 600; }
+
+.share-content .square:nth-child(even) .widget-parent {
+  background: #006644 !important; }
+.share-content .square:nth-child(even):hover .widget-parent {
+  background: #f39316 !important; }
+
+.contact .form-contact .form-group:focus {
+  background: none; }
 
 footer .footer-container {
   background-size: cover;

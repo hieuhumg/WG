@@ -27,6 +27,8 @@ $bg-footer : #4183d1;
 $color-link : #4a90e2;
 $color-title :#f39316;
 $color-content: #006644;
+$color-black : black;
+$color-gray: #424242;
 body{
 	font-family: Sans, Helvetica, tahoma, sans-serif;
 }
@@ -95,6 +97,45 @@ h5.title {
 	font-size: 17.65px;
 	text-transform: uppercase;
 	font-weight: 600;
+}
+h3.title-news {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: $color-content;
+	padding-bottom: 20px;
+}
+h4.title-news {
+	@media screen and (max-width: $break-tablet) {
+		padding-top: 15px;
+		font-size: 25px;
+	}
+	font-size: 35px;
+	color: $color-content;
+}
+h5.title-news {
+	font-size: 20px;
+	color: $color-content;
+}
+p.content-news {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+p.date {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+p.italic {
+	padding: 10px 0;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: italic;
+}
+p.content-news {
+	font-size: 16px;
+	text-align: justify;
+	margin: 25px 0;
+	line-height: 1.7rem;
 }
 .bg-fix{
     padding: 180px 0px 124px 0px;
@@ -820,3 +861,59 @@ ul.list-title {
 .p-custom {
   padding: 0 1px;
 }
+.widget-parent {
+	margin-top: 30px;
+	border-radius: 18px;
+	background-color: $color-title;
+	transition: 0.5s;
+	&:hover {
+		background-color: $color-content;
+	}
+	.thumb {
+		border-top-left-radius: 18px;
+		border-top-right-radius: 18px;
+		overflow: hidden;
+		height: 220px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.name {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 20px;
+		.widget-name {
+			color: $color-white;
+			h4 {
+				font-weight: 600;
+				text-transform: uppercase;
+				font-size: 20px;
+			}
+		}
+		.widget-fb {
+			i {
+				font-size: 22px;
+				color: $color-white;
+				padding-right: 10px;
+				&:hover {
+					color: #19bfc7;
+				}
+			}
+
+		}
+
+	}
+	.content {
+		padding: 8px 0px;
+		p {
+			font-size: 15px;
+			color: $color-white;
+			padding: 10px 20px;
+			font-style: italic;
+		}
+	}
+
+}
+
