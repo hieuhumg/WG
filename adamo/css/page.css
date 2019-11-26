@@ -27,7 +27,11 @@ a:hover {
   color: #fff; }
 
 .btn-common {
+  transition: 0.5s;
   font-size: 20px; }
+  .btn-common:hover {
+    background: #f39316;
+    transform: scale(1.2); }
   @media screen and (max-width: 768px) {
     .btn-common {
       font-size: 13px; } }
@@ -64,6 +68,9 @@ h3.title {
   text-transform: uppercase;
   font-weight: 600;
   color: #f39316; }
+  @media screen and (max-width: 425px) {
+    h3.title {
+      font-size: 24px; } }
 
 h4.title {
   font-size: 21px;
@@ -126,18 +133,6 @@ p.content-news {
   @media screen and (max-width: 768px) {
     .p-70 {
       padding: 20px 0; } }
-
-.bg-content {
-  background: url("../img/anh_nen_thu_2.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  height: 100%; }
-
-.bg-content-mid {
-  background: url("../img/anh_nen_thu_2.png") no-repeat center top;
-  background-size: 100% 60%; }
 
 .bg-gray {
   background: #f9fafb; }
@@ -757,6 +752,20 @@ ul.list-title li {
       padding: 10px 20px;
       font-style: italic; }
 
+span.square {
+  color: #fff;
+  background: #006644;
+  padding: 10px 20px;
+  padding-top: 15px;
+  clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%);
+  display: inline-block; }
+
+.pb-40 {
+  padding-bottom: 40px; }
+  @media screen and (max-width: 425px) {
+    .pb-40 {
+      padding-bottom: 20px; } }
+
 body {
   counter-reset: sec-counter; }
 
@@ -865,7 +874,10 @@ header {
         margin-top: 0; } }
 
 .introduce {
-  margin-top: 100px; }
+  margin-top: 70px; }
+  @media screen and (max-width: 768px) {
+    .introduce {
+      margin-top: 20px; } }
   .introduce h3 {
     padding-bottom: 44px; }
   .introduce .icon {
@@ -888,21 +900,12 @@ header {
       position: absolute;
       right: 0; }
 
-.advantages {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-  .advantages h3 {
-    padding: 50px; }
-  .advantages p {
-    color: #fff;
-    padding-top: 20px; }
+.advantages p {
+  color: #fff;
+  padding-top: 20px; }
 
 .course {
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-color: #f5f5f5; }
-  .course h3 {
-    padding: 50px; }
   .course .strong {
     margin-bottom: 30px;
     font-size: 20px; }
@@ -969,6 +972,9 @@ header {
     color: #fff;
     padding-bottom: 30px;
     padding-top: 15px; }
+    @media screen and (max-width: 425px) {
+      .achievements h4 {
+        font-size: 14px; } }
   .achievements .widget .thumb {
     object-fit: cover;
     overflow: hidden;
@@ -1034,24 +1040,22 @@ header {
       background-color: #29ad81;
       transition: 0.3s; }
 
-.opinion {
-  padding-top: 70px; }
-  .opinion h3 {
-    color: #006644;
-    font-weight: 600; }
-  .opinion p {
-    padding-right: 30px; }
-  .opinion #opinion-widget .owl-dots {
-    position: absolute !important;
-    left: -53%;
-    top: 54%; }
-    @media screen and (max-width: 768px) {
-      .opinion #opinion-widget .owl-dots {
-        position: relative !important;
-        top: 0 !important;
-        left: 0 !important; } }
-    .opinion #opinion-widget .owl-dots .active span {
-      background: #006644 !important; }
+.opinion h3 {
+  color: #006644;
+  font-weight: 600; }
+.opinion p {
+  padding-right: 30px; }
+.opinion #opinion-widget .owl-dots {
+  position: absolute !important;
+  left: -53%;
+  top: 54%; }
+  @media screen and (max-width: 768px) {
+    .opinion #opinion-widget .owl-dots {
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important; } }
+  .opinion #opinion-widget .owl-dots .active span {
+    background: #006644 !important; }
 
 .banner-top-achievements, .banner-top-basic, .banner-top-target, .banner-top-share {
   position: relative; }
@@ -1876,8 +1880,80 @@ header {
 .share-content .square:nth-child(even):hover .widget-parent {
   background: #f39316 !important; }
 
-.contact .form-contact .form-group:focus {
-  background: none; }
+.contact {
+  padding: 30px;
+  margin-top: -100px; }
+  @media screen and (max-width: 768px) {
+    .contact {
+      padding: 10px; } }
+  .contact .form-contact {
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 14px #8a8080; }
+    @media screen and (max-width: 768px) {
+      .contact .form-contact {
+        padding: 15px; } }
+    .contact .form-contact .input-form-contact {
+      border-top: 0px !important;
+      border-right: 0px !important;
+      border-left: 0px !important;
+      padding-left: 0; }
+      .contact .form-contact .input-form-contact:focus {
+        box-shadow: none; }
+    .contact .form-contact .form-group {
+      text-align: left;
+      margin-top: 15px; }
+      .contact .form-contact .form-group label {
+        font-size: 17px;
+        font-weight: 600;
+        text-align: left; }
+    .contact .form-contact .select-object {
+      background: #e4e4e4;
+      border-radius: 30px; }
+      .contact .form-contact .select-object label span {
+        border-radius: 20px; }
+      .contact .form-contact .select-object label input {
+        opacity: 0; }
+        .contact .form-contact .select-object label input:checked ~ span {
+          background: #0a694b; }
+      .contact .form-contact .select-object label:hover {
+        cursor: pointer; }
+  .contact button.btn-contact {
+    padding: 10px 30px;
+    width: 100%;
+    background: #006644;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 15px; }
+    @media screen and (max-width: 768px) {
+      .contact button.btn-contact {
+        margin: 0 auto;
+        width: 100%; } }
+    .contact button.btn-contact:hover {
+      background: #f39316; }
+  .contact .icon-phone {
+    margin-top: 15px;
+    display: flex;
+    align-items: center; }
+    .contact .icon-phone .img-phone img {
+      transition: 0.5s; }
+      .contact .icon-phone .img-phone img:hover {
+        transform: scale(1.2); }
+    .contact .icon-phone .text-phone {
+      padding-left: 30px; }
+      .contact .icon-phone .text-phone p {
+        font-size: 16px;
+        margin-bottom: 5px; }
+      .contact .icon-phone .text-phone span {
+        font-size: 22px;
+        font-weight: 600; }
+        @media screen and (max-width: 768px) {
+          .contact .icon-phone .text-phone span {
+            font-size: 17px; } }
 
 footer .footer-container {
   background-size: cover;

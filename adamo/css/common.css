@@ -27,7 +27,11 @@ a:hover {
   color: #fff; }
 
 .btn-common {
+  transition: 0.5s;
   font-size: 20px; }
+  .btn-common:hover {
+    background: #f39316;
+    transform: scale(1.2); }
   @media screen and (max-width: 768px) {
     .btn-common {
       font-size: 13px; } }
@@ -64,6 +68,9 @@ h3.title {
   text-transform: uppercase;
   font-weight: 600;
   color: #f39316; }
+  @media screen and (max-width: 425px) {
+    h3.title {
+      font-size: 24px; } }
 
 h4.title {
   font-size: 21px;
@@ -126,18 +133,6 @@ p.content-news {
   @media screen and (max-width: 768px) {
     .p-70 {
       padding: 20px 0; } }
-
-.bg-content {
-  background: url("../img/anh_nen_thu_2.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  height: 100%; }
-
-.bg-content-mid {
-  background: url("../img/anh_nen_thu_2.png") no-repeat center top;
-  background-size: 100% 60%; }
 
 .bg-gray {
   background: #f9fafb; }
@@ -756,5 +751,19 @@ ul.list-title li {
       color: #fff;
       padding: 10px 20px;
       font-style: italic; }
+
+span.square {
+  color: #fff;
+  background: #006644;
+  padding: 10px 20px;
+  padding-top: 15px;
+  clip-path: polygon(100% 0, 100% 100%, 50% 100%, 3% 100%, 0 17%);
+  display: inline-block; }
+
+.pb-40 {
+  padding-bottom: 40px; }
+  @media screen and (max-width: 425px) {
+    .pb-40 {
+      padding-bottom: 20px; } }
 
 /*# sourceMappingURL=common.css.map */

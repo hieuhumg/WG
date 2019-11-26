@@ -26,3 +26,9 @@ $('.navbar-toggler').click(function(){
 
     
 });
+function switchButton(elm) {
+    $(".select-object").find('span').removeClass('btn-warning');
+    if ($(elm).prop('checked')) {
+        $(elm).parent().find('span').addClass('btn-warning');
+    }
+}
