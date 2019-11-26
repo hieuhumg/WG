@@ -23,5 +23,6 @@ $('#form').submit(function(e) {
 $('.navbar-toggler').click(function(){
     $('.menu .nav-link').css('color', '#4a4a4a');
     $('#contact').removeClass('btn-contact').addClass('nav-link');
+
     
 });
